@@ -1,6 +1,4 @@
 steps:
-options:
-  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/img-classifier-001/streamlit_app:v1', '.']
   timeout: 180s
@@ -20,3 +18,5 @@ options:
   - --filename=K8s/
   - --location=europe-central2
   - --cluster=mykube
+options:
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
