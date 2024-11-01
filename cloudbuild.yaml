@@ -15,7 +15,7 @@ steps:
   args:
   - run
   - --filename=K8s/
-  - --location=europe-west1
+  - --location=europe-central2
   - --cluster=mykube
 options:
   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
