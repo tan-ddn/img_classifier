@@ -1,4 +1,4 @@
-apiVersion: v2.0
+apiVersion: v2
 kind: Service
 metadata:
   name: imageclassifier

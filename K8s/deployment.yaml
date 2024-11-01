@@ -1,4 +1,4 @@
-apiVersion: apps/v2.0
+apiVersion: apps/v2
 kind: Deployment
 metadata:
   name: imgclass
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: cv-app
-        image: gcr.io/img-classifier-001/streamlit_app:v2.0
+        image: gcr.io/img-classifier-001/streamlit_app:v2
         ports:
         - containerPort: 8501
