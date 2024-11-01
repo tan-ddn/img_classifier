@@ -1,8 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/img-classifier-001/myapp:v1', '.']
-options:
-  logging: GCS_ONLY
   timeout: 180s
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/img-classifier-001/myapp:v1']
@@ -20,3 +18,6 @@ options:
   - --filename=K8s/
   - --location=europe-central2
   - --cluster=mykube
+options:
+  logging: GCS_ONLY
+  
