@@ -1,6 +1,6 @@
 steps:
 options:
-  logging: NONE
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/img-classifier-001/streamlit_app:v1', '.']
   timeout: 180s
