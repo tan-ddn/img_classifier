@@ -11,12 +11,11 @@ steps:
   - |
     echo "Docker Container Built"
     ls -la
-    ls -al models/
 - name: "gcr.io/cloud-builders/gke-deploy"
   args:
   - run
   - --filename=K8s/
-  - --location=europe-central2
+  - --location=europe-west1
   - --cluster=mykube
 options:
   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
